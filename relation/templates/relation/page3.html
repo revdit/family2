@@ -1,0 +1,27 @@
+
+{% extends 'relation/home.html' %}
+{% block content %}
+{% load static %}
+<table width="100%" height="100px" cellspacing="0">
+    <tr bgcolor="#3b5998">
+        <td height="75px" align="=right">
+            <input type="button" height="50px" value="HOME"> 
+            <input type="button" value="MENU">
+            <h1 align="center" style="color: red"> <b>CyerSquare </b><hr /> </h1><br />
+            {% block content %}
+            <img align="right" width="75%" src="{% static 'image/it1.jpg' %}">
+            <a href="{% url 'page1'%}">About us</a><br />
+            <a href="{% url 'page2'%}">Companies</a><br />
+            <a href="{% url 'page3'%}">Course</a><br />
+        </td>
+
+        <tr>
+            <td colspan="2">
+            <img src="{% static 'image/it3.jpg'%}" width="100%">
+        
+
+        </td>
+    </tr>
+                     
+</table>
+{% endblock %}
